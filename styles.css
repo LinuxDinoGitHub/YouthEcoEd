@@ -1,0 +1,38 @@
+body{
+    height: 100%;
+    width: 100%;
+}
+
+/*navbar css start*/
+
+.navbar{
+    position: fixed;
+    display: flex;
+    top: 0%;
+    left: 0%;
+    height: 85px;
+    width: 100%;
+    background-color: rgb(197, 255, 208);
+}
+
+.navbar-container{
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar-item{
+    display: inline-flex;
+    justify-content: center;
+}
+
+.navbar-item a{
+    text-decoration: none;
+    color: #337517;
+    padding: 10px;
+}
+
+.active-page, .page{
+    
+}

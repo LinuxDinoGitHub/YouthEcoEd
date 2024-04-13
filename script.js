@@ -1,0 +1,3 @@
+function showNavbar(){
+    alert("yay");
+};
