@@ -5,19 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouthEcoEd</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="navbar" id="navbar">
         <ul class = "navbar-container">
             <li class="logo navbar-item"><a href="index.html"><img src="#"></a></li>
-            <li class="active-page navbar-item"><a href="index.html">Home</a></li>
-            <li class="page navbar-item"><a href="#">About us</a></li>
-            <li class="page navbar-item"><a href="#">Activities</a></li>
-            <li class="page navbar-item"><a href="#">News & Events</a></li>
-            <li class="page navbar-item"><a href="#">Resources</a></li>
-            <li class="page navbar-item"><a href="#">Games</a></li>
-            <li class="contact page navbar-item"><a href="#">Contact us</a></li>
-            <a href="javascript:void(0);" class="navbar-item" onclick="showNavbar()"></a>
+            <div class="hidden-mobile" id="mobile">
+                <li class="active-page navbar-item"><a href="index.html">Home</a></li>
+                <li class="page navbar-item"><a href="#">About us</a></li>
+                <li class="page navbar-item"><a href="#">Activities</a></li>
+                <li class="page navbar-item"><a href="#">News & Events</a></li>
+                <li class="page navbar-item"><a href="#">Resources</a></li>
+                <li class="page navbar-item"><a href="#">Games</a></li>
+                <li class="contact page navbar-item"><a href="#">Contact us</a></li>
+            </div>
+            <a href="javascript:void(0);" class="navbar-item icon" onclick="showNavbar()">
+                <i class="fa fa-bars"></i>
+            </a>
         </ul>
     </div>
     <script src="script.js"></script>
