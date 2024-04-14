@@ -58,21 +58,5 @@ body{
 }
 
 @media screen and (max-width: 800px) {
-    .hidden-mobile { display: none; }
-    .icon {
-        float: right;
-        display: block;
-        margin: 0;
-        padding: 0;
-        position: absolute;
-        right: 20px;
-        top: 0;
-    }
-    .responsive {
-        display: block;
-    }
-    .responsive .navbar-item {
-        display: block;
-        text-align: center;
-    }
+    
 }
