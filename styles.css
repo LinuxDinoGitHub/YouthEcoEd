@@ -1,6 +1,8 @@
 body{
     height: 100%;
     width: 100%;
+    opacity: 1;
+    transition: 1000ms;
 }
 
 /*navbar css start*/
@@ -13,7 +15,6 @@ body{
     height: 85px;
     width: 100%;
     background-color: #e0ffc0;
-    justify-content: center;
     margin: 0;
 }
 
@@ -44,7 +45,7 @@ body{
 }
 
 .logo{
-    padding-right: 200px;
+    padding-right: 100px;
 }
 
 .logo img{
@@ -53,13 +54,22 @@ body{
     border-radius: 100px;
 }
 
+.logo h3{
+    padding-left: 10px;
+}
+
 .hidden-mobile{
     display: inline-flex;
     height: 100%;
 }
 
 .icon{
-    display: none;
+    text-decoration: none;
+    color: #253e22;
+    transform: scale(2.5);
+    display: inline-flex;
+    align-items: center;
+    display: block;
 }
 
 .active-page{
@@ -76,5 +86,22 @@ body{
 }
 
 @media screen and (max-width: 800px) {
-    
+    .hidden-mobile{display: none;}
+    a.icon{
+        display: block;
+        position: absolute;
+    }
+    .show-mobile{
+        position: absolute;
+        height: fit-content;
+        display: block;
+        opacity: 1;
+        background-color: #e0ffc0;
+        right: 0;
+    }
+    .show-mobile.navbar-item, .show-mobile.contact{
+        display: block;
+        float: none;
+        text-align: right;
+    }
 }
