@@ -10,6 +10,7 @@ body{
 .navbar{
     position: fixed;
     display: flex;
+    justify-content: center;
     top: 0%;
     left: 0%;
     height: 85px;
@@ -85,23 +86,51 @@ body{
     background-color: #e0ffc0;
 }
 
+.hamburger{
+    display: none;
+}
+
+.hamburger-container{
+    display: inline-block;
+    cursor: pointer;
+}
+
+.hamburger-container div{
+    height: 5px;
+    width: 40px;
+    background-color: #253e22;
+    opacity: 0.8;
+    margin: 6px 0;
+    transition: 200ms;
+}
+
+.change .bar1{
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2{
+    opacity: 0;
+}
+
+.change .bar3{
+    transform: translate(0, -11px)  rotate(45deg);
+}
+
 @media screen and (max-width: 800px) {
     .hidden-mobile{display: none;}
-    a.icon{
-        display: block;
-        position: absolute;
+    .hamburger{
+        display: flex;
+        align-items: center;
+        right: 10px;
     }
     .show-mobile{
-        position: absolute;
-        height: fit-content;
-        display: block;
+        transition: 1000ms;
+        position: relative;
         opacity: 1;
         background-color: #e0ffc0;
         right: 0;
     }
     .show-mobile.navbar-item, .show-mobile.contact{
         display: block;
-        float: none;
-        text-align: right;
     }
 }
