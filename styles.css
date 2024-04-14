@@ -13,30 +13,34 @@ body{
     height: 85px;
     width: 100%;
     background-color: #e0ffc0;
-}
-
-.navbar-container{
-    list-style: none;
     justify-content: center;
-    height: 100%;
-    width: 100%;
     margin: 0;
 }
 
-.navbar-item {
+.navbar-item, .contact{
     display: inline-flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-}
-
-
-.navbar-item a, .icon{
-    margin: 8px;
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     text-decoration: none;
     font-size: 14px;
     color: #253e22;
+    transition: 500ms;
+}
+
+.contact a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #91f78b;
+    border: solid #253e22 1px;
+    border-radius: 40px;
+    height: 40px;
+    padding: 0 20px 0 20px;
+    transition: 500ms ease-in-out;
 }
 
 .hidden-mobile{
@@ -52,9 +56,13 @@ body{
     background-color: #bdf0ba;
 }
 
-.page:hover{
-    transition: 500ms;
+.navbar-item:hover{
     background-color: #bdf0ba;
+}
+
+.contact a:hover{
+    box-shadow: 5px 5px lightblue;
+    background-color: #e0ffc0;
 }
 
 @media screen and (max-width: 800px) {
